@@ -1,0 +1,136 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Outfit", sans-serif;
+    
+}
+
+.spinner{
+    display:grid;
+    place-self: center;
+    min-height: 80vh;
+    
+}
+.spin{
+    width: 65px;
+    height: 65px;
+    place-self: center;
+    border: 5px solid #bdbdbd;
+    border-top-color:#4500c6 ;
+    border-radius: 50%;
+    animation: rotate 2s infinite;
+}
+@keyframes rotate {
+    100%{
+        transform: rotate(360deg);
+    }
+    
+}
+.coin-chart {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #101010;
+  border-radius: 12px;
+}
+.coin {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  color: #fff;
+}
+
+.coin-name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.coin-name img {
+  width: 30px;
+  height: 30px;
+}
+
+.coin-info {
+  text-align: center;
+  background-color: #1e1e1e;
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 500px;
+}
+
+.coin-info ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.coin-info li {
+  margin-bottom: 10px;
+}
+
+.coin-chart {
+  margin-top: 30px;
+  width: 100%;
+  max-width: 700px;
+}
+.coin {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+  background-color: #121212;
+  min-height: 100vh;
+  color: #fff;
+}
+
+.coin-name {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 30px;
+}
+
+.coin-name img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.coin-name h2 {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.coin-info {
+  background-color: #1f1f1f;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+  max-width: 500px;
+  width: 100%;
+}
+
+.coin-info ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.coin-info li {
+  margin-bottom: 18px;
+  font-size: 18px;
+  line-height: 1.6;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #333;
+  padding-bottom: 6px;
+}
+
+.coin-info li:last-child {
+  border-bottom: none;
+}
